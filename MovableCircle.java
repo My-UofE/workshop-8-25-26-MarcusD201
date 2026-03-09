@@ -1,5 +1,5 @@
 
-public class MovableCircle implements Movable { 
+public class MovableCircle implements Movable,Shape { 
   private MovablePoint center;
   private int radius;
   
@@ -28,4 +28,15 @@ public void moveLeft() {
 public String toString(){
 	String readOut= ("x= "+ center.getX() +" y= "+ center.getY() +" radius= "+radius);
 	return readOut;}
+
+public double area(){
+  double res_area= Math.PI * radius * radius;
+return res_area;
+  }
+
+public double perimeter(){
+double res_circ = 2* Math.PI*radius;
+
+return res_circ;
+  }
 }

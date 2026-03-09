@@ -10,5 +10,8 @@ public class TestApp {
     System.out.println(m2);
     m2.moveRight();
     m2.moveUp();
-    System.out.println(m2);}
+    System.out.println(m2);
+    
+    System.out.printf("Area:%.3f, Perimeter:%.3f%n",m2.area(),m2.perimeter());
+    }
 }
