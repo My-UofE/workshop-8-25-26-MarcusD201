@@ -5,7 +5,7 @@ public class MovableCircle implements Movable {
   
   // TASK: Add the constructor here
   public MovableCircle(int x, int y, int xSpeed, int ySpeed, int newradius){
-MovablePoint center = new MovablePoint(x,y,xSpeed,ySpeed)
+MovablePoint center = new MovablePoint(x,y,xSpeed,ySpeed);
 
 radius= newradius;
 
@@ -24,6 +24,8 @@ public void moveRight() {
 
 public void moveLeft() {
 	 center.moveLeft();// move the center left
-  }
-
+      }
+public String toString(){
+	String readOut= ("x= "+ center.getX() +" y= "+ center.getY() +" radius= "+radius);
+	return readOut;}
 }

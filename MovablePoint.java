@@ -17,14 +17,15 @@ public MovablePoint(int newx,int  newy,int newxSpeed,int  newySpeed){
 	public void moveUp() {
 		y += ySpeed; // moves y point up by increment ySpeed
 	}
+	@Override
 public void moveDown(){
 	y=y-ySpeed;
 }
-
+	@Override
 public void moveLeft(){
 	x=x-xSpeed;
 }
-
+	@Override
 public void moveRight(){
 	x=x + xSpeed;
 }
@@ -33,5 +34,10 @@ public String toString(){
 	String readOut= ("x= "+x+" y= "+y+" xSpeed= "+xSpeed+" ySpeed= "+ySpeed);
 	return readOut;
 }
-
+public int getX(){
+	return x;
+  	}
+  public int getY(){
+	return y;
+	}
 }
